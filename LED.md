@@ -55,10 +55,9 @@
 
 3.综合：  
 
-void Dalay1ms()  
-{  
+    void Dalay1ms()  
+    {  
     unsigned char i,j;  
-
     _nop_();    
     i=2;  
     j=199;  
@@ -66,7 +65,7 @@ void Dalay1ms()
     {  
         while(--j);    
     }while(--i);  
-}  
+    }  
   
 ## 闪烁灯
 原理图：  
