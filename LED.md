@@ -19,8 +19,8 @@
         LED =0; 
     }
 或  
-    #include<reg52.h>
-    sbit LED = P2^3;
+    #include<reg52.h>  
+    sbit LED = P2^3;  
     {  
         LED =0;  
         while(1);    
