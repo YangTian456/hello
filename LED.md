@@ -10,7 +10,6 @@
     }  
 
 改进  
-
     #include<reg52.h>  
     sbit LED =P2^3;  
     void main()  
@@ -89,8 +88,8 @@ void Dalay1ms()
     }  
 
 ## 流水灯  
-代码： 
-    #include<reg52.h>  
+代码：  
+    '#include<reg52.h>'   
     #define uchar unsigned char   //对数据类型进行声明定义  
     #define uchar unsigned char   //对数据类型进行声明定义  
 
