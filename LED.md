@@ -1,6 +1,6 @@
-#LED#  
+# LED
 
-##程序的编写##  
+## 程序的编写  
 
     #include<reg52.h> //包括特殊功能寄存器定义的头文件  
     sbit LED = P2^3; //位地址的声明  
@@ -26,7 +26,7 @@
         while(1);    
     }  
 
-##延迟函数  
+## 延迟函数  
 1.短暂延迟：  
 例如10 μs：  
     void Dalay10μs()  
@@ -64,7 +64,7 @@ void Dalay1ms()
     }while(--i);  
 }  
   
-##闪烁灯##
+## 闪烁灯
 原理图：  
     #include<reg52.h>  
     sbit LED =P2^3;  
@@ -88,7 +88,7 @@ void Dalay1ms()
     
     }  
 
-##流水灯##  
+## 流水灯  
 代码： 
     #include<reg52.h>  
     #define uchar unsigned char   //对数据类型进行声明定义  
@@ -132,6 +132,6 @@ void Dalay1ms()
 
 
 
-    }
+    
 
 
