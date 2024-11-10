@@ -10,6 +10,7 @@
     }  
 
 改进  
+    
     #include<reg52.h>  
     sbit LED =P2^3;  
     void main()  
@@ -18,6 +19,7 @@
         LED =0; 
     }
 或  
+
      #include<reg52.h>  
      sbit LED = P2^3;  
       {  
@@ -28,6 +30,7 @@
 ## 延迟函数  
 1.短暂延迟：  
 例如10 μs：  
+
     void Dalay10μs()  
     {  
         _NOP_();  
@@ -40,6 +43,7 @@
 
 2.循环空语句延时  
 例如1ms延迟：  
+
     void delay_ms(int n)  
     {  
         int i,j;  
@@ -50,6 +54,7 @@
     }  
 
 3.综合：  
+
 void Dalay1ms()  
 {  
     unsigned char i,j;  
@@ -65,6 +70,7 @@ void Dalay1ms()
   
 ## 闪烁灯
 原理图：  
+
     #include<reg52.h>  
     sbit LED =P2^3;  
     void delay_ms(int 2)  //延时函数，大概2 ms  
@@ -84,12 +90,11 @@ void Dalay1ms()
             LED=0;  
             delay_ms(10);  
         }  
-    
-    }  
 
 ## 流水灯  
 代码：  
-    '#include<reg52.h>'   
+
+    #include<reg52.h>  
     #define uchar unsigned char   //对数据类型进行声明定义  
     #define uchar unsigned char   //对数据类型进行声明定义  
 
