@@ -19,12 +19,12 @@
         LED =0; 
     }
 或  
-    #include<reg52.h>  
-    sbit LED = P2^3;  
-    {  
-        LED =0;  
+     #include<reg52.h>  
+     sbit LED = P2^3;  
+      {  
+         LED =0;  
         while(1);    
-    }  
+       }  
 
 ## 延迟函数  
 1.短暂延迟：  
